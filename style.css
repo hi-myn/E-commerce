@@ -1,3 +1,4 @@
+/*************************************HEADER**************************************/
 #cabecalho {
     background-color: darkseagreen;
     padding: 100;
@@ -9,61 +10,52 @@
     align-self: flex-start;
 }
 .nome-logo {
-    font-family: 'Kufam', sans-serif;
-    color: whitesmoke;
-    font-weight: 700;
-    font-size: 32px;
-    align-self: flex-start
+  font-family: 'Kufam', sans-serif;
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: 32px;
+  align-self: flex-start
 }
   
-    .imagem-cabecalho {
-        width: 100px;
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  align-items: center;
+  gap: 25px;
 }
-.menu-item {
-    color:darkgray;
-    background: #4682B4;
+  
+.link-navigation {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  color:whitesmoke;
 }
   
-  .navigation {
-    display: flex;
-    justify-content: center;
-    margin: 0px;
-    align-items: center;
-    gap: 25px;
-  }
-  
-  .link-navigation {
-    font-family: 'Kufam', sans-serif;
-    font-weight: 600;
-    font-size: 17px;
-    color:whitesmoke;
-  }
-  
-  .link-navigation:hover {
-    text-decoration: underline;
-    color: #190495;
-    transition: transform 1s ease-in-out;
-  }
-    .center {
-        margin-left: 50%;
-        transform: translatex (-50%);
-        }
-    footer {
+.link-navigation:hover {
+  text-decoration: underline;
+  color: #190495;
+  transition: transform 1s ease-in-out;
+}
+/* .center {
+  margin-left: 50%;
+  transform: translatex (-50%);
+} */
 
-        text-align: center;
-        display: flex;    
-        background-color: gray;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 15rem;  
-        flex-direction: row;
-        align-items: baseline;
-     
 
-        text-align: center;
-
-     }    
+/**************************************FOOTER**************************************/
+footer {
+  text-align: center;
+  display: flex;    
+  background-color: gray;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 15rem;  
+  flex-direction: row;
+  align-items: baseline;
+ text-align: center;
+}    
 
 #footer{
   display: flex;
