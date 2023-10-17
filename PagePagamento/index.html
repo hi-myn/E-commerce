@@ -12,7 +12,7 @@
         <div class="container">
           <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-              <img src="/img-vitrine/logo.jpg" class="bi me-2 rounded-circle" width="100" height="me-lg-auto" alt="">
+              <img src="/imgens/logo.jpg" class="bi me-2 rounded-circle" width="100" height="me-lg-auto" alt="">
             </a>
     
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
@@ -35,26 +35,53 @@
         </div>
     </header>
     
-    <section>
-        <div>
-            <button type="button">
+    <section class="d-flex flex-column justify-content-center ">
+            <div class="align-self-center">
+              <h3 class="align-self-center mt-5">Pagamento</h3>
+              <p class="align-self-center mt-3">Escolha uma forma de pagamento</p>
+              <button type="button" class="btn text-dark bg-danger-subtle px-2 py-2 mt-4">
                 <img src="./icons/apple-173-svgrepo-com.svg" alt="" width="30">
                 <span>Pay with Apple Pay</span>
-            </button>
-            <button type="button">
-                <img src="./icons/google-color-svgrepo-com.svg" alt="" width="30">
-                <span>Pay with Google Pay</span>
-            </button>
-        </div>
+              </button>
+              <button type="button" class="btn text-dark bg-danger-subtle px-2 py-2 mt-4 ms-3">
+                <img src="./icons/paypal-color-svgrepo-com.svg" alt="" width="30">
+                <span >Pague com o PayPal</span>
+             </button> <br>
+              <div class="align-self-center mt-5">
+              <p class="align-self-center ">Selecione o modelo do cartão:</p>
+              <input class="form-check-input" type="radio" id="cartaoCredito" name="typeCard" value="cartaoCredito">
+              <label class="form-check-label" for="cartaoCredito">Cartão de crédito</label>
+              <input class="form-check-input" type="radio" id="cartaoDebito" name="typeCard" value="cartaoDebito">
+              <label class="form-check-label" for="cartaoDebito">Cartão de débito</label>
+            </div>
+            <div class="align-self-center mt-4">
+                <div class="input-group mb-3 ">
+                    <label for="card-number">Número do cartão</label>
+                    <input class="ms-3" type="text" id="card-number" name="card-number" maxlength="16"  placeholder="XXXX XXXX XXXX XXXX">
+                </div>
+
+                <div class="input-group mb-3 mt-4">
+                    <label for="card-name">Nome do cartão</label>
+                    <input  class="ms-4" type="text" id="card-name" name="card-name">
+                </div>
+
+                <div class="input-group mb-3 mt-4">
+                    <label for="expiration-card">Data de vencimento</label>
+                    <input class="ms-4" type="text" id="expiration-card" name="expiration-card" maxlength="5" placeholder="XX/XX">
+                </div>
+
+                <div class="input-group mb-3 mt-4">
+                    <label for="cvc">CVC</label>
+                    <input class="ms-5" type="text" id="cvc" name="cvc" maxlength="3">
+                </div>
+            </div>
+           
+            </div>
+           
+           <button type="submit" class="align-self-center btn text-dark bg-danger-subtle mt-3 mb-5">Finalizar pedido</button> 
         
 
     </section>
-
-    
-
-    
-
-
 
 
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" type="module"></script>
