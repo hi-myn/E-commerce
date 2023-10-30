@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8"
-    <title>Fechamento da Compra:
-    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizando pedido:</title>
     <style>
         body { 
             font-family: Arial, Helvetica, sans-serif;}
@@ -43,7 +43,7 @@
                 width: 222px;
             }
 
-            .select-wrapper: ::after {
+            .select-wrapper ::after {
                 content: " >";
                 color: #666;
                 font-size: 18px;
@@ -90,73 +90,78 @@
             }
         
     </style>
+
 </head>
 <body>
     <h1>Entrega</h1> 
-    <form action="url_para_enviar dados_do_formulario" method="post">
-        <fieldset>
-            <div class="input-simples">
-                <div>
-                    <label for="Nome:"> Nome: <span>*</span></label>
-                    <input type="text" name="nome" id="nome" required>
-                </div>
-                <div class="input-simples">
-                    <label for="endereco">Endereço: <span>*</span></label>
-                    <input type="text" name="endereco" id="endereco" required>
-                </div>
+    <form action="./form.js=" method="get">
+        <label for="Nome:"> Nome: <span>*</span></label>
+        <input type="text" name="nome" id="nome">
+                       
+        <label for="cep">CEP: <span>*</span></label>
+        <input  name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+        onblur="pesquisacep(this.value);">
+    
+        <label for="rua">Rua: <span>*</span></label>
+        <input type="text" name="rua" id="rua" size="60">
+    
+        <label for="bairro">Bairro: <span>*</span></label>
+        <input type="text" name="bairro" id="bairro" size="40">
+    
+        <label for="cidade">Cidade: <span>*</span></label>
+        <input type="text" name="cidade" id="cidade" size="40">
+
+        <label for="Estado">Estado: <span>*</span></label>
+        <input type="text" name="Estado" id="Estado" size="2">
+
+        <div>
+            <label for="Estado">Estado</label>
+            <div class="select-wrapper">
+            <select name="Estado" id="Estado">
+                <option value="Acre">Acre</option>
+                <option value="Alagoas">Alagoas</option>
+                <option value="Amapá">Amapá</option>
+                <option value="Amazonas">Amazonas</option>
+                <option value="Bahia">Bahia</option>
+                <option value="Ceará">Ceará</option>
+                <option value="Distrito Federal">Distrito Federal</option>
+                <option value="Espírito Santo">Espírito Santo</option>
+                <option value="Goiás">Goiás</option>
+                <option value="Maranhão">Maranhão</option>
+                <option value="Mato Grosso">Mato Grosso</option>
+                <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                <option value="Minas Gerais">Minas Gerais</option>
+                <option value="Pará">Pará</option>
+                <option value="Paraíba">Paraíba</option>
+                <option value="Paraná">Paraná</option>
+                <option value="Pernambuco">Pernambuco</option>
+                <option value="Piauí">Piauí</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="Rondônia">Rondônia</option>
+                <option value="Roraima">Roraima</option>
+                <option value="Santa Catarina">Santa Catarina</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Sergipe">Sergipe</option>
+                <option value="Tocantins">Tocantins</option>
+            </select>
             </div>
-            <div class="input-duplo">
-                <div>
-                    <label for="cep">CEP: <span>*</span></label>
-                    <input type="text" name="cep" id="cep" required>
-            </div>
-            <div>
-                <label for="Estado">Estado</label>
-                <div class="select-wrapper">
-                <select name="Estado" id="Estado">
-                    <option value="Acre">Acre</option>
-                    <option value="Alagoas">Alagoas</option>
-                    <option value="Amapá">Amapá</option>
-                    <option value="Amazonas">Amazonas</option>
-                    <option value="Bahia">Bahia</option>
-                    <option value="Ceará">Ceará</option>
-                    <option value="Distrito Federal">Distrito Federal</option>
-                    <option value="Espírito Santo">Espírito Santo</option>
-                    <option value="Goiás">Goiás</option>
-                    <option value="Maranhão">Maranhão</option>
-                    <option value="Mato Grosso">Mato Grosso</option>
-                    <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
-                    <option value="Minas Gerais">Minas Gerais</option>
-                    <option value="Pará">Pará</option>
-                    <option value="Paraíba">Paraíba</option>
-                    <option value="Paraná">Paraná</option>
-                    <option value="Pernambuco">Pernambuco</option>
-                    <option value="Piauí">Piauí</option>
-                    <option value="Rio de Janeiro">Rio de Janeiro</option>
-                    <option value="Rondônia">Rondônia</option>
-                    <option value="Roraima">Roraima</option>
-                    <option value="Santa Catarina">Santa Catarina</option>
-                    <option value="São Paulo">São Paulo</option>
-                    <option value="Sergipe">Sergipe</option>
-                    <option value="Tocantins">Tocantins</option>
-                </select>
-                </div>
-                </div>
-            </div>
-            <h2>Opção de Envio:</h2>
-            <div class="input-duplo">
-                <div class="radio">
-                    <input type="radio" name="opcao-envio" id="normal" value="normal"
-                    <label for="normal">Normal</label>
-                </div>
-                <div class="radio">
-                    <input type="radio" name="opcao-envio" id="expresso" value="expresso"
-                    <label for="expresso">Expresso</label>
-            </div>
-            <button type="submit">Enviar</button>
-        </fieldset>
+        </div>
+                
     </form>
-</body>
+         
+    <fieldset>
+        <h2>Opção de Envio:</h2>
+        <div class="input-duplo">
+            <div class="radio">
+                <input type="radio" name="opcao-envio" id="normal" value="normal"
+                <label for="normal">Normal</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="opcao-envio" id="expresso" value="expresso"
+                <label for="expresso">Expresso</label>
+        </div>
+        <button type="submit">Enviar</button>
+    </fieldset>
 
 
 <footer>
@@ -173,7 +178,11 @@
             <p>email: nome@gmail.com</p> 
             <p>telefone: (11) 9 9999-9999</p>
     </h4>
-</html>
 </footer>
+
+<script src="form.js"></script>
+</body>
+
+
 
 </html>
