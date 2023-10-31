@@ -51,10 +51,6 @@ header{
   color: #190495;
   transition: transform 1s ease-in-out;
 }
-/* .center {
-  margin-left: 50%;
-  transform: translatex (-50%);
-} */
 
 #banner{
   display: flex;
