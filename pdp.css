@@ -1,47 +1,70 @@
 #cabecalho {
-    background-color: darkseagreen;
-    padding: 100;
-    display: flex;
-    height: 120;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    align-self: flex-start;
+  background-color: #ffe2e9;
+  padding: 100;
+  display: flex;
+  height: 100;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-self: flex-start;
 }
 .nome-logo {
-    font-family: 'Kufam', sans-serif;
-    color: whitesmoke;
-    font-weight: 700;
-    font-size: 32px;
-    align-self: flex-start
+  font-family: "Kufam", sans-serif;
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: 32px;
+  align-self: flex-start;
 }
-  
-    .imagem-cabecalho {
-        width: 100px;
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  align-items: center;
+  gap: 25px;
+}
+
+.link-navigation {
+  font-family: "Kufam", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  color: whitesmoke;
+}
+
+.link-navigation:hover {
+  text-decoration: underline;
+  color: #190495;
+  transition: transform 1s ease-in-out;
 }
 .menu-item {
-    color:darkgray;
-    background: #4682B4;
+  color: darkgray;
+  background: #4682b4;
 }
 
 .center {
-    margin-left: 100%;
-    transform: translatex (-100%);
-    }
-footer {
+  margin-left: 100%;
+  transform: translatex (-100%);
+}
+#footer {
+    width: 100vw;
+    height: 100%;
+    max-width: 992px;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    background-color:#E0BFB8;
+    min-width: 100%
 
-    text-align: center;
-    display:flex;    
-    background-color: gray;
-    position: absolute;
-    bottom: 0;
+}
+
+.footer-final{
+    align-self: flex-end;
     width: 100%;
-    height: 10rem;  
-    display: inline-table;
+    height: 100%;
     text-align: center;
-    font-family: 'Kufam', sans-serif;
-    color: whitesmoke;
-    font-weight: 200;
     font-size: 15px;
+    padding: 20px 30px;
+    align-items:baseline;
+}
 
- }    

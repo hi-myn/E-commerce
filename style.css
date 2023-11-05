@@ -17,7 +17,7 @@ header{
     background-color: #FFE2E9;
     padding: 100;
     display: flex;
-    height: 120;
+    height: 100;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -64,35 +64,28 @@ header{
 
 
 /**************************************FOOTER**************************************/
- footer {
-  margin-top: 100%;
-  margin-bottom: 0;
-  text-align: end;
-  display: flex;    
-  background-color: gray;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 7rem;  
+#footer {
+  width: 100vw;
+  height: 100%;
+  max-width: 992px;
+  padding: 20px;
+  margin: auto;
+  display: flex;
   flex-direction: row;
-  align-items: baseline;
-}    
+  background-color:#E0BFB8;
+  min-width: 100%
 
-#footer{
-  display: flex;
 }
 
-.footer_institucional{
-  display: flex;
-  flex-direction: column;
-  margin-left: 500px;
+.footer-final{
+  align-self: flex-end;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px 30px;
+  align-items:baseline;
 }
-
-.footer_atendimento{
-  display: flex;
-  flex-direction: column;
-  margin-left: 500px;
-} 
 
 /**********VITRINE1*********************/
 #vitrine-1{
