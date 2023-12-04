@@ -1,0 +1,22 @@
+#footer {
+    width: 100vw;
+    height: 100%;
+    max-width: 992px;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    background-color:#E0BFB8;
+    min-width: 100%
+  
+  }
+  
+  .footer-final{
+    align-self: flex-end;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px 30px;
+    align-items:baseline;
+  }
