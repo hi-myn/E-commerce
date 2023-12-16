@@ -1,0 +1,28 @@
+{
+    "produtos": [
+        {
+            "nome": "Produto 1",
+            "preco": 1,
+            "imagem":"https://scontent-gru1-2.xx.fbcdn.net/v/t39.30808-6/304812567_413397147565868_7185311681686383201_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=gqFk0Z_2clMAX-bQog7&_nc_ht=scontent-gru1-2.xx&oh=00_AfAWiASdo4pZp65BQF4JIFaq7llrC9MwzZEMYF_t7mPtew&oe=657E6AF6"
+        },
+
+        {
+            "nome": "Produto 2",
+            "preco": 1,
+            "imagem":"https://scontent-gru1-2.xx.fbcdn.net/v/t39.30808-6/304812567_413397147565868_7185311681686383201_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=gqFk0Z_2clMAX-bQog7&_nc_ht=scontent-gru1-2.xx&oh=00_AfAWiASdo4pZp65BQF4JIFaq7llrC9MwzZEMYF_t7mPtew&oe=657E6AF6"
+        
+        },
+        {
+            "nome": "Produto 3",
+            "preco": 1,
+            "imagem":"https://scontent-gru1-2.xx.fbcdn.net/v/t39.30808-6/304812567_413397147565868_7185311681686383201_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=gqFk0Z_2clMAX-bQog7&_nc_ht=scontent-gru1-2.xx&oh=00_AfAWiASdo4pZp65BQF4JIFaq7llrC9MwzZEMYF_t7mPtew&oe=657E6AF6"
+        
+        },
+        {
+            "nome": "Produto 4",
+            "preco": 1,
+            "imagem":"https://scontent-gru1-2.xx.fbcdn.net/v/t39.30808-6/304812567_413397147565868_7185311681686383201_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=gqFk0Z_2clMAX-bQog7&_nc_ht=scontent-gru1-2.xx&oh=00_AfAWiASdo4pZp65BQF4JIFaq7llrC9MwzZEMYF_t7mPtew&oe=657E6AF6"
+
+        }
+    ]
+}
