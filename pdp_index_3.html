@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PDP - Molde para vela</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="pdp.css">
+</head>
+
+<body>
+    <header id="cabecalho">
+        <img src="../imgens/logo.jpg" alt="" width="100" height="100" style="border-radius: 50px;">
+        <form>
+            <input placeholder='Pesquisar'/>
+            <button>Enviar</button>
+        </form>
+        <nav class="navigation">
+            <a class="link-navigation" href="#">Home</a>
+            <a class="link-navigation" href="#">Minha Área</a>
+            <a class="link-navigation" href="#">Carrinho</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="product">
+            <img src="../imgens/telas.svg" alt="Produto">
+            <h2>Molde para vela</h2>
+            <p>Molde redondo feito em silicone para produção de velas aromáticas. Por ser feito em silicone, é um produto extremamente maleável, perfeito para desenformar suas velas aromáticas com segurança, sem risco de danificá-las. <br>
+              <p>Especificações</p>  
+              <p>Material: silicone</p>
+              <p>Peso médio: 160gr</p>
+              <p>Medidas: 9,9 cm comp. x 6,2 cm larg. x 7,5 cm alt.</p>
+              <p class="price">R$ 25,00</p>
+            <button>Adicionar ao carrinho</button>
+        </div>
+    </div>
+
+    <h1>Calcular Frete</h1>
+    <input type="text" id="cep" placeholder="Digite o CEP">
+    <button onclick="calcularFrete()">Calcular</button>
+    <p id="resultado"></p>
+
+    <footer style="margin-top: 5%;">
+      <div id="footer">
+        <div class="footer-final">
+          <h4>Institucional</h4>
+          <p>Nossa História</p>
+          <p>Nosso time</p>
+        </div>
+
+        <div class="footer-final">
+          <h4>Atendimento</h4>
+
+          <p>email: nome@gmail.com</p>
+          <p>telefone: (11) 9 9999-9999</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="app/app.js"></script>
+    <script>
+        function calcularFrete() {
+            var cep = document.getElementById('cep').value;
+            document.getElementById('resultado').innerHTML = 'O frete para o CEP ' + cep + ' é R$ 5,90';
+        }
+    </script>
+</body>
+</html>
