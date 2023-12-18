@@ -43,12 +43,13 @@ header{
   font-family: 'Kufam', sans-serif;
   font-weight: 600;
   font-size: 17px;
-  color:whitesmoke;
+  color:rgb(134, 73, 146);
+  text-decoration: none;
 }
   
 .link-navigation:hover {
   text-decoration: underline;
-  color: #190495;
+  color: #fd08fd;
   transition: transform 1s ease-in-out;
 }
 

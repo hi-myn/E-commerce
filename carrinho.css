@@ -9,27 +9,79 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-body > header {
-  background: #111;
-  color: white;
-  font-size: 24px;
-  padding: 20px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
+/*************************************HEADER**************************************/
+header{
+  width: 100vw;
+}
+/*************************************HEADER**************************************/
+header{
+  width: 100vw;
+}
+#cabecalho {
+    background-color: #FFE2E9;
+    padding: 100;
+    display: flex;
+    height: 100;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-self: flex-start;
+}
+.nome-logo {
+  font-family: 'Kufam', sans-serif;
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: 32px;
+  align-self: flex-start
+}
+  
+.link-navigation {
+  font-family: 'Kufam', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  color:rgb(134, 73, 146);
+  text-decoration: none;
+}
+  
+.link-navigation:hover {
+  text-decoration: underline;
+  color: #fd08fd;
+  transition: transform 1s ease-in-out;
+}
+
+
+/**************************************FOOTER**************************************/
+#footer {
+  width: 100vw;
+  height: 100%;
+  max-width: 992px;
+  padding: 20px;
+  margin: auto;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  background-color:#E0BFB8;
+  min-width: 100%
+
+}
+
+.footer-final{
+  align-self: flex-end;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px 30px;
+  align-items:baseline;
 }
 
 body > main {
   background: #fff;
-  padding: 0 30px 30px;
+  padding: 15px 30px 30px;
 }
 
 body > main .page-title {
   font-size: 40px;
-  padding: 50px 0;
+  padding: 50px ;
   text-align: center;
 }
 
